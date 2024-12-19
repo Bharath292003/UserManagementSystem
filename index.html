@@ -9,14 +9,37 @@
 </head>
 
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form id="login-form">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-        <p id="error-message"></p>
+    <div class="main-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="content">
+                <img src="/src/assets/login.jpg" alt="Dashboard Illustration">
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="form-container">
+                <h1>User Management System</h1>
+                <p>Please login to your account</p>
+                <form id="login-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="social-login">
+                    <p>Or Login with</p>
+                    <div class="buttons">
+                        <button class="google-login">Google</button>
+                        <button class="facebook-login">Facebook</button>
+                    </div>
+                </div>
+                <p class="signup-link">Don't have an account? <a href="#">Signup</a></p>
+            </div>
+        </div>
     </div>
     <script type="module" src="/src/js/login.js"></script>
 </body>
